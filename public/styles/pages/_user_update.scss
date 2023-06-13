@@ -1,0 +1,43 @@
+.user-update{
+    direction: rtl;
+  padding-bottom: 40px;
+  width: calc(100% - 270px);
+  text-align: center;
+  padding-top: 85px;
+  height: 100%;
+  padding-bottom: 10px;
+  overflow-y: initial;
+  margin-left: 0;
+  margin-right: 254.63px;
+  @media only screen and (max-width: 769px) {
+    margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  }
+ .subscription-management{
+  direction: ltr;
+  min-width: 250px;
+  margin:5px;
+  &-btn{
+    background-color: $sorme !important;
+    border-radius: 10px  0px  0px  10px ;
+    z-index: 0 !important;
+    min-width: 155px;
+    align-items: center;
+   }
+   &-input{
+    text-align: right;
+    width: 100%;
+    border: 1px solid hsl(0deg, 0%, 80%);
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+  &:focus{
+    border-color: $sorme !important;
+    box-shadow: none !important;
+    outline: unset !important;
+    background-color: #F3F3F3;
+  }
+}
+ }
+    }

@@ -1,0 +1,40 @@
+.submission-alert{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  flex-direction: column;
+  width: 30%;
+  height: fit-content;
+  box-shadow: 24;
+  background-color: whitesmoke;
+  padding: 20px;
+  
+    .name-card-section{
+      font-size: 20px;
+      margin-top: 20px;
+  
+    }
+  
+    .detail-card-section{
+      font-size: 20px;
+      margin-top: 30px;
+      color:grey
+  
+    }
+    .submit-btn{
+      height: 50px !important;
+     background-color: $sorme !important;
+     width: 50%;
+    margin: 10px !important;
+    &:hover{
+      transform: scale(1.01);
+      transition-duration: 0.5s;
+    }
+    }
+  }
+  
+ 

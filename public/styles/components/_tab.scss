@@ -1,0 +1,16 @@
+.tab{
+  @include FontStyle(1rem, 400, $darkGray);
+  margin: 0 20px;
+    line-height: 1.45;
+  padding: 0.61rem 1.2rem;
+  cursor: pointer;
+}
+.tab-active{
+  @include FontStyle(1rem, 400, $green);
+  margin: 0 20px;
+  line-height: 1.45;
+  padding: 0.61rem 1.2rem;
+  border-bottom:3px solid $green ;
+  cursor: pointer;
+  
+}

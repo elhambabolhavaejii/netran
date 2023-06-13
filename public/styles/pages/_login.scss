@@ -1,0 +1,123 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:$sorme;
+  @include Display(flex, center, center, column);
+
+  &-icon {
+    margin-bottom: 15px ;
+  }
+
+  &-modal {
+    width: 533px;
+    height: 550px;
+    background-color: $white;
+    box-shadow: 0px 15px 75px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    @include Display(flex, space-evenly, center, column);
+    @media (max-width: 900px) {
+      width: 90%;
+      margin: 0 auto;
+    min-height: 600px;
+
+      }
+      
+    &-header {
+      width: 90%;
+      @include Display(flex, space-between);
+
+      &-title {
+        @include FontStyle(34px, 700, $sorme);
+        @media (max-width: 900px) {
+          @include FontStyle(28px, 700, $sorme);
+          }
+      }
+    }
+
+    &-input-group {
+      width: 90%;
+
+      &-email {
+        margin: 10px 0;
+
+        .input-text-label {
+          >div {
+            >h6 {
+              @include FontStyle(12px, 500, $sorme);
+            }
+          }
+        }
+      }
+
+      &-password {
+        .input-text-label {
+          >input {
+            border-color: $gray;
+          }
+        }
+      }
+    }
+
+    &-error {
+      width: 90%;
+      height: 41px;
+      background-color: $white;
+      @include Display(flex, start, center);
+      border-radius: 8px;
+
+      &-text {
+        @include FontStyle(14px, 400, $blue);
+        margin: 0;
+      }
+
+      >img {
+        margin: 0 10px;
+      }
+    }
+
+    &-button {
+      width: 90%;
+      .spinner-container {
+        height: unset !important;
+      }
+      .button-component {
+        width: 100%;
+      }
+    }
+    &-forgot-passsword {
+      width: 90%;
+      @include Display(flex, space-between, center);
+
+      .smalText {
+        white-space: nowrap;
+      }
+
+      &-link {
+        @include FontStyle(14px, 600, $green);
+        cursor:pointer;
+      }
+    }
+    &-otp-code {
+      width: 90%;
+      margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    @include FontStyle(14px, 600, $sorme)
+
+    }
+
+    &-button {
+      width: 90%;
+      .spinner-container {
+        height: unset !important;
+      }
+      .button-component {
+        width: 100%;
+      }
+    }
+
+  }
+}

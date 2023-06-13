@@ -1,0 +1,35 @@
+.subScription-card{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+  background-color: $white;
+
+    &-title{
+        @include FontStyle(14px, 700, $black);
+
+    }
+    &-date{
+        @include FontStyle(12px, 500, $gray);
+        
+    }
+    &-day{
+        @include FontStyle(12px, 500, $gray);
+        
+    }
+    .CircularProgressbar {
+        width: 100px;
+        vertical-align: middle;
+    }
+    .CircularProgressbar-path {
+        stroke: $green !important;
+      }
+      .CircularProgressbar-trail {
+        stroke: gray;
+      }
+      .CircularProgressbar-text {
+        fill: $green !important;
+      }
+}

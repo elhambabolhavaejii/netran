@@ -1,0 +1,49 @@
+.support-ticket-card{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1px 1px grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  .img-card-section{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .name-card-section{
+    font-size: 14px;
+    margin-top: 60px;
+
+  }
+
+  .number-card-section{
+    font-size: 16px;
+    margin-bottom: 10px;
+
+  }
+
+}
+.active{
+  -webkit-box-shadow: 0 0 1px 2px rgb(236, 116, 190);
+  -moz-box-shadow: 0 0 1px 2px rgb(236, 116, 190);
+  box-shadow: 0 0 1px 2px rgb(236, 116, 190);
+}
+
+.iconSize{
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+  .iconSize {
+    font-size: 20px;
+  }
+}

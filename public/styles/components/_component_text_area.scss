@@ -1,0 +1,29 @@
+.text-area {
+  /* Border */
+
+  position: relative;
+
+  .input-area {
+    background-color: $white;
+    outline: none;
+    border: none;
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    min-height: 50vh;
+  }
+
+  .title {
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    background: white;
+    font-size: 12px;
+    font-weight: 500;
+    color: $sorme;
+  }
+
+  .input-area::placeholder {
+    @include FontStyle(16px, 400, $sorme)
+  }
+} 

@@ -1,0 +1,176 @@
+.register {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:$sorme;
+  @include Display(flex, center, center, column);
+
+  &-icon {
+    margin-bottom: 15px ;
+  }
+
+  &-modal {
+    width: 533px;
+    height: 550px;
+    padding: 20px 2px;
+    background-color: $white;
+    box-shadow: 0px 15px 75px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    @include Display(flex, space-evenly, center, column);
+    @media (max-width: 900px) {
+      width: 90%;
+      margin: 0 auto;
+    min-height: 600px;
+
+      }
+    &-header {
+      width: 90%;
+      @include Display(flex, space-between);
+
+      &-title {
+        @include FontStyle(34px, 700, $sorme);
+        @media (max-width: 900px) {
+          @include FontStyle(28px, 700, $sorme);
+          }
+      }
+    }
+
+    &-input-group {
+      width: 90%;
+
+      &-name {
+        margin: 10px 0;
+        @include Display(flex, space-between, center);
+
+        > div:nth-of-type(1) {
+          > input {
+            border-radius: 8px ;
+            border-color: $gray;
+          }
+        }
+
+        > div:nth-of-type(2) {
+          > input {
+            border-radius:8px;
+            border-color: $gray;
+          }
+        }
+
+        .input-text-label {
+          > div {
+            > h6 {
+              @include FontStyle(12px, 500, $lightSorme);
+            }
+          }
+        }
+      }
+
+      &-email {
+        margin: 10px 0;
+
+        .input-text-label {
+          > input {
+            border-color: $gray;
+          }
+        }
+      }
+
+      &-phone {
+        margin: 10px 0;
+
+        .input-text-label {
+          > input {
+            border-color: $gray;
+          }
+        }
+      }
+
+      &-password {
+        margin: 10px 0;
+
+        .input-text-label {
+          > input {
+            border-color: $gray;
+          }
+        }
+      }
+
+      
+    }
+
+    &-forgot-passsword {
+      width: 90%;
+      margin-bottom: 10px;
+    margin-top: 10px;
+      @include Display(flex, space-between, center);
+      @media (max-width: 900px) {
+        flex-direction: column !important;
+        }
+      .square-radio {
+        width: 20px;
+      }
+
+      .smalText {
+        white-space: nowrap;
+      }
+
+      &-link {
+        @include FontStyle(13px, 600, $blue)
+       
+      }
+    }
+
+    &-button {
+      width: 90%;
+      .spinner-container {
+        height: unset !important;
+      }
+      .button-component {
+        width: 100%;
+      }
+    }
+
+    &-divider {
+      width: 90%;
+      position: relative;
+
+      &-line {
+        width: 100%;
+        height: 1px;
+        background-color: $gray;
+      }
+
+      &-text {
+        background-color: $white;
+        width: 63px;
+        height: 30px;
+        @include Display(flex, center, center);
+        position: absolute;
+        top: -14px;
+        left: 204px;
+
+        > h6 {
+          @include FontStyle(10px, 700, $lightSorme);
+          margin: 0;
+        }
+      }
+    }
+
+    &-button-group {
+      width: 90%;
+      @include Display(flex, space-between);
+
+      > button {
+        width: 137.67px;
+        height: 72px;
+        @include Border(1px, $gray, 8px);
+        @include Display(flex, center, center);
+        background-color: transparent;
+
+
+      }
+    }
+  }
+}

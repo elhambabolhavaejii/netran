@@ -1,0 +1,36 @@
+.btn-tab{
+  @include FontStyle(1rem, 400, $darkGray);
+  cursor: pointer;
+  padding: 0.786rem;
+  border: 1px solid transparent;
+  border-radius: 0.358rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  svg{
+    margin-left: 0.5rem!important;
+    width: 17px;
+    height: 17px;
+  }
+}
+.btn-tab-active{
+  @include FontStyle(1rem, 400, $white);
+  box-shadow: 0 4px 18px -4px rgb(81 82 86 / 65%);
+  cursor: pointer;
+  background-color: $sorme;
+  padding: 0.786rem;
+  border: 1px solid transparent;
+  border-radius: 0.358rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  svg{
+    margin-left: 0.5rem!important;
+    width: 17px;
+    height: 17px;
+  }
+}

@@ -1,0 +1,20 @@
+.lable-icon{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10px;
+    align-items:center;
+  background-color: $white;
+
+    svg{
+        width: 28px;
+        height: 28px;
+        stroke: $darkGray
+    }
+    &-title{
+        @include FontStyle(14px, 700, $gray);
+        margin-right: 10px;
+    }
+}

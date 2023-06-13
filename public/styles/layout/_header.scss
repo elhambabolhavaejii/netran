@@ -1,0 +1,115 @@
+.header {
+  direction: rtl;
+  display: flex;
+  background: $sorme;
+  justify-content: space-between;
+  height: 65px;
+  width:100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  z-index: 5;
+  background-color: $white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .title{
+    @include FontStyle(12px, 500, $green);
+  }
+
+  @media only screen and (min-width: 769px) {
+    width: calc(100% - 254.63px);
+    right: unset;
+  }
+
+
+  &__drawer {
+    direction: rtl;
+    width: 254.63px;
+
+    .item {
+      display: flex;
+      margin-right: 1.5rem;
+      padding: 10px 0px;
+
+     
+    }
+
+  }
+  .header-left-side{
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+    .notification{
+      align-items: center;
+      margin: 20px;
+
+      width: 100%;
+    }
+  }
+  .header-texts{
+    font-size: 12px;
+  }
+  .role{
+    margin:20px;
+    white-space: nowrap;
+  }
+}
+
+.header-responsive {
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 254.63px;
+  background: $white;
+  padding-right: 24px;
+  padding-top: 43px;
+  padding-left: 22px;
+  text-align: right;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  scrollbar-width: none !important;
+  box-shadow: 0 0 15px 0 rgb(34 41 47 / 5%);
+  &-item{
+    width: 100%;
+    height: 39px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+    &:hover{
+      cursor: pointer;
+      padding-right: 20px;
+      transition-duration: 0.5s;
+    }
+
+    &-text{
+    @include FontStyle(1rem, 500, rgb(98, 95, 110));
+    svg{
+      height: 1.4285rem;
+      width: 1.4285rem;
+      margin-left: 5px;
+    }
+    }
+  }
+  .active{
+
+  background: linear-gradient(-118deg, #22272e, rgb(32 41 147 / 93%));
+  box-shadow: 0 0 5px 1px rgb(17 19 52 / 70%);
+    .header-responsive-item-text{
+      @include FontStyle(1rem, 500, $white) ;
+      }
+  }
+
+}

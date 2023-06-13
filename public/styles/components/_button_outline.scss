@@ -1,0 +1,17 @@
+.button-outline {
+  width: 129px;
+  height: 48px;
+  border: 1px solid $lightGreen;
+  background-color: transparent;
+  border-radius: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-text {
+    @include FontStyle(14px, 600, $blue);
+    cursor: pointer;
+    margin: 0;
+  }
+}

@@ -1,0 +1,223 @@
+
+
+.faq {
+  direction: rtl;
+  padding-bottom: 40px;
+  width: calc(100% - 270px);
+  text-align: center;
+  padding-top: 85px;
+  height: 100%;
+  padding-bottom: 10px;
+  overflow-y: initial;
+  margin-left: 0;
+  margin-right: 254.63px;
+  @media only screen and (max-width: 769px) {
+    margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  }
+  &-title{
+    @include FontStyle(22px, 500, $gray);
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+  }
+
+  &-banner{
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.428rem;
+    // transition: all .3s ease-in-out , background 0s,color 0s,border-color 0s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    width: 95%;
+    margin: 10px auto;
+
+    &-content{
+      text-align: center;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+  
+      &-title{
+        font-size: 1.714rem;
+        font-weight: 500;
+      line-height: 1.2;
+      color: $sorme;
+      margin-top: 3rem!important;
+      margin-bottom: 0.5rem;
+    }
+    &-desc{
+      color: #6e6b7b;
+      margin-top: 1.5rem!important;
+        margin-bottom: 3rem!important;
+      }
+    }
+  }
+
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media only screen and (max-width: 768px) {
+     flex-direction: column;
+      }
+    .accordion{
+width: 75%;
+padding: 1rem !important;
+padding-top: 0rem !important;
+@media only screen and (max-width: 1024px) {
+  width: 60%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    }
+.accordion-item{
+  border: unset;
+  box-shadow: 0 2px 15px 0 rgba(34,41,47,.05)!important;
+  margin-top: 0.71rem;
+    margin-bottom: 0.71rem;
+    box-shadow: 0 2px 15px 0 rgba(34,41,47,.05)!important;
+    border-radius: 0.358rem;
+    border-bottom: 0 solid transparent!important;
+  .accordion-header{
+    button{
+      background-color: #fff;
+      padding: 1rem 1rem 1rem 2.8rem;
+      border-radius: 0.358rem;
+      border: unset;
+box-shadow: unset;
+font-weight: 500;
+font-size: 1rem;
+    color: #5e5873 !important;
+    text-align: right;
+
+}
+.accordion-button{
+  &::after{
+ 
+    margin-left: unset;
+    margin-right: auto;
+   
+       
+  }
+}
+
+  }
+  .accordion-body{
+    line-height: 1.45;
+    color: #6e6b7b !important;
+    text-align: right;
+    font-size: 0.80rem;
+  }
+}
+      padding: 1rem 1rem 1rem 2.8rem;
+    }
+    .vertical-tabs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      padding-top: 15px;
+      @media only screen and (max-width: 1024px) {
+      width: 40%;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        }
+      &-item{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: #5e5873;
+      padding: 0.786rem 1.5rem;
+      cursor: pointer;
+      width: 90%;
+      margin:  0 auto;
+    }
+    .active{
+      background-color: $sorme !important;
+      color: #fff !important;
+      border-radius: 0.358rem;
+
+    }
+    }
+
+  }
+  &-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem!important;
+    padding: 1rem ;
+    &-title{
+      font-weight: 500;
+      line-height: 1.2;
+      color: #5e5873;
+      margin-bottom: 1rem!important;
+      font-size: 1.714rem;
+    }
+    &-desc{
+      margin-bottom: 3rem!important;
+      font-size: 1rem;
+    font-weight: 400;
+    color: #6e6b7b !important;
+    }
+     &-container{
+
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 90%;
+ @media only screen and (max-width: 769px) {
+  flex-direction: column;
+}
+    &-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @media only screen and (max-width: 769px) {
+        margin-top: 10px;
+      }
+      .title{
+        font-weight: 500;
+    line-height: 1.2;
+    color: #5e5873;
+    font-size: 1rem;
+
+      }
+
+      .desc{
+        color: #6e6b7b!important;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.45;
+      }
+      
+    }
+  }
+  }
+  .icon-container{
+    width: 42px;
+    height: 42px;
+    color: $green;
+    background-color: rgb(45 187 219 / 12%);
+    margin-bottom: 1.5rem!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.357rem!important;
+  }
+}

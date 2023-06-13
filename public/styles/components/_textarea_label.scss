@@ -1,0 +1,37 @@
+.textarea{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  &-label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #646c9a;
+
+  }
+  &-input {
+    background: $white;
+    min-height: 100px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #e2e5ec;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $darkGray;
+    outline: unset;
+    padding: 0.65rem 1rem;
+    color: #495057;
+    background-clip: padding-box;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    &:hover {
+      outline: none;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      transition-duration: 1s;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.notification-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  overflow: hidden;
+  border-right: 4px solid $orange;
+  margin-bottom: 20px;
+  background-color: $white;
+    &-content{
+      display: flex;
+      justify-content: space-between;
+      &-title{
+          @include FontStyle(14px, 700, $black);
+      }
+      &-date{
+          @include FontStyle(12px, 500, $gray);
+      }
+    }
+    &-description{
+        @include FontStyle(12px, 500, $darkGray);
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
